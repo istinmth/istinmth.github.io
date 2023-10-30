@@ -28,7 +28,13 @@ html {
     scroll-behavior: smooth;
     font-family: 'Libre Franklin', sans-serif;
 }
-
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+}
 /* NAVIGATION BAR */
 .navbar {
     display: flex;
