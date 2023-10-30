@@ -7,6 +7,12 @@
     --ebony: #697268ff;
 }
 
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -14,6 +20,12 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
     }
 }
 
@@ -28,13 +40,20 @@ html {
     scroll-behavior: smooth;
     font-family: 'Libre Franklin', sans-serif;
 }
+
 .hidden {
     opacity: 0;
     transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
+
 .show {
     opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
 }
+
 /* NAVIGATION BAR */
 .navbar {
     display: flex;
@@ -157,6 +176,44 @@ body {
     z-index: -1;
     filter: drop-shadow(5px 5px 5px #222)
 }
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container article {
+    color: var(--mint-cream);
+    background: var(--night);
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-top: 10vh;
+}
+.container article:hover{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 1);
+}
+
+.bemutatkozas {
+    font-size: 2rem;
+}
+.multiplikativ {
+    font-weight: 600;
+}
+.multiplikativ:hover {
+    background: linear-gradient(90deg, transparent, gold, transparent);
+    background-size: 200% auto;
+    color: var(--night);
+    animation: shine 3s linear backwards infinite;
+    background-clip: text;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: var(--night);
+    -webkit-text-stroke-width: 0.01px;
+}
+
 
 @media (max-width: 600px) {
     .navbar {
