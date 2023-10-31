@@ -48,9 +48,9 @@ html {
 
 body {
     background-image: url('../images/background.png');
-    background-attachment: fixed;
+    background-attachment: local;
     background-position: top left;
-    background-size: cover;
+    background-size:contain;
 }
 
 .hidden {
@@ -214,11 +214,9 @@ body {
 #utolso {
     margin-bottom: 5vh;
 }
-
-.bemutatkozas {
-    font-size: 1.7rem;
+.bemutatkozas p {
+    font-size: 3vh;
 }
-
 .card-container {
     background: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, rgb(248, 239, 111) 95%);
     width: 300px;
@@ -568,8 +566,8 @@ body {
     .page-title {
         font-size: 20vh;
         margin-bottom: 3vh;
+        margin-left: 2vh;
     }
-
     .tetel {
         flex: 1 0 22%;
     }
