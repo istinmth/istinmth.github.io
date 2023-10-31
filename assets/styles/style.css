@@ -419,7 +419,7 @@ body::before {
     }
 
     .page-title {
-        font-size: 13vh;
+        font-size: 10vh;
         margin-bottom: 5vh;
         margin-left: 2vh;
     }
@@ -428,6 +428,7 @@ body::before {
     }
     .title-image img {
         width: 65%;
+        margin-top: 6vh;
     }
 
     .tetel {
