@@ -107,6 +107,7 @@ body::before {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 .menu>li {
@@ -564,10 +565,8 @@ body::before {
     }
 
     #current {
-        background-color: #f7fff7ff;
-        color: #0d0a0bff;
-        padding: 9px;
-        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 1.8vh;
     }
 
     .title-image img {
