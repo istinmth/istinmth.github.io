@@ -423,7 +423,12 @@ body {
     .tetel {
         flex: 1 0 50%;
     }
-
+    .card-container {
+        margin: 3vh;
+    }
+    .footer {
+        justify-content: center;
+    }
 }
 
 @media all and (min-width: 601px) and (max-width: 967px) {
