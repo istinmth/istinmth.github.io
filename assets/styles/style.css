@@ -48,12 +48,14 @@ html {
 
 body::before {
     content: "";
-    position: fixed; /* This can also be absolute, depending on your needs */
+    position: fixed;
+    /* This can also be absolute, depending on your needs */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure the image is behind your content */
+    z-index: -1;
+    /* Ensure the image is behind your content */
     background-image: url('../images/background.png');
     background-position: top left;
     background-size: cover;
@@ -223,9 +225,11 @@ body::before {
 #utolso {
     margin-bottom: 5vh;
 }
+
 .bemutatkozas p {
     font-size: 2vh;
 }
+
 .card-container {
     background: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, rgb(248, 239, 111) 95%);
     width: 300px;
@@ -369,9 +373,11 @@ body::before {
         width: 100%;
         border-radius: 2px;
     }
+
     .mobile-break {
         display: block;
     }
+
     .menu-button-container {
         display: flex;
     }
@@ -423,9 +429,12 @@ body::before {
         margin-bottom: 5vh;
         margin-left: 2vh;
     }
-    .bemutatkozas {
-        margin-top: 0;
+
+    .container article {
+        margin-top: 1vh;
+        margin-bottom: 5vh;
     }
+
     .title-image img {
         width: 65%;
         margin-top: 6vh;
@@ -434,9 +443,11 @@ body::before {
     .tetel {
         flex: 1 0 50%;
     }
+
     .card-container {
         margin: 3vh;
     }
+
     .footer {
         justify-content: center;
     }
@@ -506,6 +517,11 @@ body::before {
 
     .title-image img {
         width: 60vh;
+    }
+
+    .container article {
+        margin-top: 1vh;
+        margin-bottom: 5vh;
     }
 
     .tetel {
@@ -579,6 +595,7 @@ body::before {
         margin-bottom: 3vh;
         margin-left: 2vh;
     }
+
     .tetel {
         flex: 1 0 22%;
     }
