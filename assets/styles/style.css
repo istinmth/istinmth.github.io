@@ -48,9 +48,9 @@ html {
 
 body {
     background-image: url('../images/background.png');
-    background-attachment: local;
+    background-attachment: fixed;
     background-position: top left;
-    background-size:contain;
+    background-size: cover;
 }
 
 .hidden {
@@ -215,7 +215,7 @@ body {
     margin-bottom: 5vh;
 }
 .bemutatkozas p {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 .card-container {
     background: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, rgb(248, 239, 111) 95%);
