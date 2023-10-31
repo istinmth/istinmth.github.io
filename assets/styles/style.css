@@ -46,11 +46,20 @@ html {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-body {
+body::before {
+    content: "";
+    position: fixed; /* This can also be absolute, depending on your needs */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the image is behind your content */
     background-image: url('../images/background.png');
-    background-attachment: fixed;
     background-position: top left;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .hidden {
