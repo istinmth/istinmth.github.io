@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vektorkosborz</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -27,7 +30,7 @@
 <body>
     <section class="navbar">
         <div class="logo-container">
-            <a href="index.html" class="nav-logo"><img width="32" height="32" src="assets/images/calculus.png"
+            <a href="index.html" class="nav-logo"><img width="32" height="32" src="assets/images/calculus.svg"
                     alt="A laptop showing a calculus symbol"></a>
         </div>
         <input id="menu-toggle" type="checkbox" />
@@ -50,90 +53,103 @@
     </div>
     <div class="container">
         <article class="hidden bemutatkozas">
-            <h2>A rókáról</h2> <p>Szőre csillogása <span class="aranysarga">aranysárgából</span> <span
-                class="voros">vörösbe</span>
-            hajlik, míg szemében ott csillog a
-            tudás
-            halhatatlan lángja. Ugyan ránézésre kis rókának hinné az ember, Recip nem egy átlagos Vulpes vulpes: oly
-            könnyedén magyarázza el a reciprok lényegét, mintha csak most végezte volna el az ELTE Matematikát. Számára
-            nem kérdés a megajánlott ötös, hiszen ő maga a <span class="italic"> MULTIPLIKATÍV INVERZ.</span></p>
+            <h2>A borzról</h2>
+            <p>A Borz nem csupán azért torkos, mert előszeretettel fogyasztja a kedvenc csemegéjét, a kukacot, hanem
+                azért is, mert tudásvágya csillapíthatatlan a lineáris algebra terén. Olyan otthonosan mozog a mezőkön,
+                mint az eukleidészi geometriában. Alvásból felkeltve is tudja a megoldást bármilyen lineáris
+                kombinációra, a tenzori szorzás pedig a vérében van - ez persze nem meglepő, hiszen ő maga is egy
+                <span class="italic">IRÁNYÍTOTT SZAKASZ</span>
+            </p>
         </article>
         <div class="hidden card-container">
             <div class="hidden card">
-                <img src="assets/images/lnx.jpeg" alt="Logaritmikus kifejezés." width="270px">
+                <a href="assets/images/badger1.png" data-lightbox="image-gallery">
+                    <img src="assets/images/badger1.png" alt="Borz első képe" width="270px">
+                </a>
             </div>
         </div>
         <div class="hidden card-container">
-            <div class=" hidden card">
-                <img src="assets/images/lnx2.jpeg" alt="Logaritmikus kifejezés 2." width="270px">
+            <div class="hidden card">
+                <a href="assets/images/badger2.png" data-lightbox="image-gallery">
+                    <img src="assets/images/badger2.png" alt="Borz 2. képe" width="270px">
+                </a>
             </div>
         </div>
         <div class="hidden card-container">
-            <div class=" hidden card">
-                <img src="assets/images/lnx3.jpeg" alt="Logaritmikus kifejezés 3." width="270px">
+            <div class="hidden card">
+                <a href="assets/images/badger3.png" data-lightbox="image-gallery">
+                    <img src="assets/images/badger3.png" alt="Borz 3. képe" width="270px">
+                </a>
             </div>
         </div>
+        <a href="assets/images/b1.jpg" data-lightbox="image-gallery" style="display: none;">
+            <img src="assets/images/b1.jpg" alt="Hidden Image of a badger1">
+        </a>
+        <a href="assets/images/b2.jpg" data-lightbox="image-gallery" style="display: none;">
+            <img src="assets/images/b2.jpg" alt="Hidden Image of a badger 2">
+        </a>
+        <a href="assets/images/b3.jpg" data-lightbox="image-gallery" style="display: none;">
+            <img src="assets/images/b3.jpg" alt="Hidden Image of a badger 3">
+        </a>
 
-        <article class="hidden" id="utolso">Kicsi rókánk már babakora óta nagyon szerette a matematikát - amióta először
-            megevett
-            egy MatematiKacsát. 🦆 Kedvencei pedig hamar a reciprokkal való számolások lettek - kívűlről fújja az összes
-            fontos tételt a témakörben:</article>
+        <article class="hidden" id="utolso">Torkosborz azóta szereti ennyire a matematikát, hogy először meglátott egy
+            LogaritMuslincát - skaláris és vektoriális szorzatok azóta nem jelentenek számára nehézséget. Kedvenc
+            tételei a témakörben a következők:</article>
         <div class="hidden tetel">
             <div class="hidden tetel-container">
-                <p>A matematikában egy nullától különböző szám reciprokának vagy multiplikatív inverzének azt a
-                    számot
-                    nevezik, amivel a számot szorozva az eredmény 1.</p>
+                <p>A vektor a matematikában használatos fogalom, a lineáris algebra egyik alapvető jelentőségű
+                    mennyisége.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class="hidden tetel-container">
-                <p>A reciprok fogalma értelmezhető a racionális, a valós és a komplex számok körében egyaránt.</p>
+                <p>Általában az ember a vektorokkal mint irányított szakaszokkal szokott találkozni, de a matematikában
+                    a jelentése ennél lényegesen bőségesebb.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class="hidden tetel-container">
-                <p>A reciprok, mint függvény az egyik legegyszerűbb példa egy olyan függvényre, melynek ismétlése az
-                    eredeti helyet adja vissza, így önmaga inverze.</p>
+                <p>A legközkeletűbb értelmezése a fogalomnak is geometriai: olyan szakasz, amit a nagyságán túl az
+                    iránya is jellemez.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class=" hidden tetel-container">
-                <p>Ha a számot x jelöli, akkor a reciproka 1/x, azaz 1 osztva x-szel, vagy másképp x a mínusz
-                    egyedik
-                    hatványon.</p>
+                <p>A vektorok legáltalánosabb, és így legmélyebb definícióját az analízisben találjuk, ahol a vektorok
+                    egy bizonyos típusú halmazhoz rendelhető másik halmaz elemei.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class="hidden tetel-container">
-                <p>A matematikában egy nullától különböző szám reciprokának vagy multiplikatív inverzének azt a
-                    számot
-                    nevezik, amivel a számot szorozva az eredmény 1.</p>
+                <p>A vektoriális szorzat egy kizárólag három és hét dimenzióban értelmezhető belső szorzat.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class="hidden tetel-container">
-                <p>A reciprok fogalma értelmezhető a racionális, a valós és a komplex számok körében egyaránt.</p>
+                <p>A vektorok legáltalánosabb szorzata a fizikában a tenzormennyiségek definiálására is szolgál. A
+                    tenzorszorzat két vektorhoz egy lineáris leképezést rendel.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class="hidden tetel-container">
-                <p>A reciprok, mint függvény az egyik legegyszerűbb példa egy olyan függvényre, melynek ismétlése az
-                    eredeti helyet adja vissza, így önmaga inverze.</p>
+                <p>A koordinátageometriában a vektorok tulajdonképpen a pontokat jelölik ki, így helyvektorként
+                    funkcionálnak.</p>
             </div>
         </div>
         <div class="hidden tetel">
             <div class=" hidden tetel-container">
-                <p>Ha a számot x jelöli, akkor a reciproka 1/x, azaz 1 osztva x-szel, vagy másképp x a mínusz
-                    egyedik
-                    hatványon.</p>
+                <p>Az időszerű vektorok hosszának négyzete pozitív, ezen vektorokhoz mindig találunk olyan
+                    koordináta-rendszert, hogy a vektor az időtengellyel párhuzamos lesz.</p>
             </div>
         </div>
     </div>
     <footer>
         <div class="footer">
             <p>©2023 Németh István Ákos</p>
-            <p>Akár <span id="cinnamonRollCount">0</span> fahéjas tekercset is ehettél volna, ahelyett, hogy itt töltöd az időd...</p>
+            <p>Az oldalon töltött idő alatt akár <span id="cinnamonRollCount">0</span> fahéjas tekercset is megehettél
+                volna...</p>
         </div>
     </footer>
 </body>
+
 </html>

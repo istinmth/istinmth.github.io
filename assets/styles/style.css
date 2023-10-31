@@ -221,15 +221,18 @@ body::before {
 .container article:hover {
     box-shadow: 0px 10px 15px rgba(248, 239, 111, 0.8);
 }
-
+.bemutatkozas p{
+    font-size: 3.4vh;
+}
+.bemutatkozas h2 {
+    font-size: 4.7vh;
+}
 #utolso {
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
 }
-
-.bemutatkozas p {
-    font-size: 2vh;
+.container article .bemutatkozas p {
+    font-size: 5vh;
 }
-
 .card-container {
     background: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, rgb(248, 239, 111) 95%);
     width: 300px;
@@ -451,6 +454,12 @@ body::before {
     .footer {
         justify-content: center;
     }
+    .bemutatkozas p{
+        font-size: 3vh;
+    }
+    .bemutatkozas h2 {
+        font-size: 3.8vh;
+    }
 }
 
 @media all and (min-width: 601px) and (max-width: 967px) {
@@ -527,6 +536,15 @@ body::before {
     .tetel {
         flex: 1 0 33%;
     }
+    .bemutatkozas p{
+        font-size: 3.3vh;
+    }
+    .bemutatkozas h2 {
+        font-size: 3.8vh;
+    }
+    .card-container {
+        margin-bottom: 15px;
+    }
 }
 
 @media all and (min-width: 968px) {
@@ -598,5 +616,11 @@ body::before {
 
     .tetel {
         flex: 1 0 22%;
+    }
+    .bemutatkozas p{
+        font-size: 3.2vh;
+    }
+    .bemutatkozas h2 {
+        font-size: 4.1vh;
     }
 }

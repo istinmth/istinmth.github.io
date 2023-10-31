@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráfóka</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -27,7 +30,7 @@
 <body>
     <section class="navbar">
         <div class="logo-container">
-            <a href="index.html" class="nav-logo"><img width="32" height="32" src="assets/images/calculus.png"
+            <a href="index.html" class="nav-logo"><img width="32" height="32" src="assets/images/calculus.svg"
                     alt="A laptop showing a calculus symbol"></a>
         </div>
         <input id="menu-toggle" type="checkbox" />
@@ -50,30 +53,45 @@
     </div>
     <div class="container">
         <article class="hidden bemutatkozas">
-            <h2>A rókáról</h2> <p>Szőre csillogása <span class="aranysarga">aranysárgából</span> <span
-                class="voros">vörösbe</span>
-            hajlik, míg szemében ott csillog a
-            tudás
-            halhatatlan lángja. Ugyan ránézésre kis rókának hinné az ember, Recip nem egy átlagos Vulpes vulpes: oly
-            könnyedén magyarázza el a reciprok lényegét, mintha csak most végezte volna el az ELTE Matematikát. Számára
-            nem kérdés a megajánlott ötös, hiszen ő maga a <span class="italic"> MULTIPLIKATÍV INVERZ.</span></p>
+            <h2>A rókáról</h2>
+            <p>Szőre csillogása <span class="aranysarga">aranysárgából</span> <span class="voros">vörösbe</span>
+                hajlik, míg szemében ott csillog a
+                tudás
+                halhatatlan lángja. Ugyan ránézésre kis rókának hinné az ember, Recip nem egy átlagos Vulpes vulpes: oly
+                könnyedén magyarázza el a reciprok lényegét, mintha csak most végezte volna el az ELTE Matematikát.
+                Számára
+                nem kérdés a megajánlott ötös, hiszen ő maga a <span class="italic"> MULTIPLIKATÍV INVERZ.</span></p>
         </article>
         <div class="hidden card-container">
             <div class="hidden card">
-                <img src="assets/images/lnx.jpeg" alt="Logaritmikus kifejezés." width="270px">
+                <a href="assets/images/foka1.jpg" data-lightbox="image-gallery">
+                    <img src="assets/images/foka1.jpg" alt="Logaritmikus kifejezés." width="270px">
+                </a>
             </div>
         </div>
         <div class="hidden card-container">
-            <div class=" hidden card">
-                <img src="assets/images/lnx2.jpeg" alt="Logaritmikus kifejezés 2." width="270px">
+            <div class="hidden card">
+                <a href="assets/images/foka2.jpg" data-lightbox="image-gallery">
+                    <img src="assets/images/foka2.jpg" alt="Logaritmikus kifejezés 2." width="270px">
+                </a>
             </div>
         </div>
         <div class="hidden card-container">
-            <div class=" hidden card">
-                <img src="assets/images/lnx3.jpeg" alt="Logaritmikus kifejezés 3." width="270px">
+            <div class="hidden card">
+                <a href="assets/images/foka3.jpg" data-lightbox="image-gallery">
+                    <img src="assets/images/foka3.jpg" alt="Logaritmikus kifejezés 3." width="270px">
+                </a>
             </div>
         </div>
-
+        <a href="assets/images/f1.jpg" data-lightbox="image-gallery" style="display: none;">
+            <img src="assets/images/f1.jpg" alt="Hidden Image of a seal 1">
+        </a>
+        <a href="assets/images/f2.jpg" data-lightbox="image-gallery" style="display: none;">
+            <img src="assets/images/f2.jpg" alt="Hidden Image of a seal 2">
+        </a>
+        <a href="assets/images/f3.jpg" data-lightbox="image-gallery" style="display: none;">
+            <img src="assets/images/f3.jpg" alt="Hidden Image of a seal 3">
+        </a>
         <article class="hidden" id="utolso">Kicsi rókánk már babakora óta nagyon szerette a matematikát - amióta először
             megevett
             egy MatematiKacsát. 🦆 Kedvencei pedig hamar a reciprokkal való számolások lettek - kívűlről fújja az összes
@@ -132,8 +150,10 @@
     <footer>
         <div class="footer">
             <p>©2023 Németh István Ákos</p>
-            <p>Akár <span id="cinnamonRollCount">0</span> fahéjas tekercset is ehettél volna, ahelyett, hogy itt töltöd az időd...</p>
+            <p>Az oldalon töltött idő alatt akár <span id="cinnamonRollCount">0</span> fahéjas tekercset is megehettél
+                volna...</p>
         </div>
     </footer>
 </body>
+
 </html>
