@@ -205,6 +205,18 @@ body::before {
     margin: 1%;
 }
 
+.arrow {
+    margin-bottom: 10vh;
+    margin-right: auto;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+    transition: ease-in-out 0.2s;
+    box-shadow: 0px 10px 15px rgba(248, 239, 111, 0.01);
+    transform: scale(1.1);
+}
+
 /* ARTICLES */
 .container article {
     text-align: justify;
@@ -213,31 +225,36 @@ body::before {
     border-radius: 10px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
     padding: 2rem;
-    margin-bottom: 20vh;
-    margin-top: 30vh;
+    margin-bottom: 10vh;
     font-size: larger;
 }
 
 .container article:hover {
     box-shadow: 0px 10px 15px rgba(248, 239, 111, 0.8);
 }
-.bemutatkozas p{
+
+.bemutatkozas p {
     font-size: 3.4vh;
 }
+
 .bemutatkozas h2 {
     font-size: 4.7vh;
 }
+
 #utolso {
     margin-bottom: 10vh;
 }
+
 .container article .bemutatkozas p {
     font-size: 5vh;
 }
+
 .card-container {
     background: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, rgb(248, 239, 111) 95%);
     width: 300px;
     height: 300px;
     border-radius: 12px;
+    margin-bottom: 10vh;
 }
 
 .card {
@@ -293,7 +310,7 @@ body::before {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 3vh;
     background-color: var(--night);
     color: var(--mint-cream);
     border-radius: 12px;
@@ -454,9 +471,11 @@ body::before {
     .footer {
         justify-content: center;
     }
-    .bemutatkozas p{
+
+    .bemutatkozas p {
         font-size: 3vh;
     }
+
     .bemutatkozas h2 {
         font-size: 3.8vh;
     }
@@ -536,12 +555,15 @@ body::before {
     .tetel {
         flex: 1 0 33%;
     }
-    .bemutatkozas p{
+
+    .bemutatkozas p {
         font-size: 3.3vh;
     }
+
     .bemutatkozas h2 {
         font-size: 3.8vh;
     }
+
     .card-container {
         margin-bottom: 15px;
     }
@@ -600,7 +622,7 @@ body::before {
 
     #current {
         font-weight: bold;
-        font-size: 1.8vh;
+        font-size: 1.9vh;
     }
 
     .title-image img {
@@ -610,16 +632,18 @@ body::before {
 
     .page-title {
         font-size: 20vh;
-        margin-bottom: 3vh;
+        margin-bottom: 1vh;
         margin-left: 2vh;
     }
 
     .tetel {
         flex: 1 0 22%;
     }
-    .bemutatkozas p{
+
+    .bemutatkozas p {
         font-size: 3.2vh;
     }
+
     .bemutatkozas h2 {
         font-size: 4.1vh;
     }

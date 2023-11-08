@@ -28,14 +28,14 @@
 </head>
 
 <body>
-    <section class="navbar">
+    <div class="navbar">
         <div class="logo-container">
             <a href="index.html" class="nav-logo"><img width="32" height="32" src="assets/images/calculus.svg"
                     alt="A laptop showing a calculus symbol"></a>
         </div>
-        <input id="menu-toggle" type="checkbox" />
+        <input id="menu-toggle" type="checkbox">
         <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
+            <span class='menu-button'></span>
         </label>
         <ul class="menu">
             <li><a href="borz.html">VekTorkosborz</a></li>
@@ -43,15 +43,15 @@
             <li><a href="tapir.html">KoordináTapír</a></li>
             <li><a href="foka.html">GráFóka</a></li>
         </ul>
-    </section>
+    </div>
     <div class="page-title-section">
         <div class="title-image"><img src="assets/images/fox.png" alt="RecipRóka, a róka képe."></div>
         <div>
-            <h1 class="page-title">Ő itt Recip<br class="mobile-break">Róka</br></h1>
-        </div>
+            <h1 class="page-title">Ő itt Recip<br class="mobile-break">Róka</h1>
     </div>
     </div>
     <div class="container">
+        <img src="assets/images/arrow.svg" alt="Lefele mutató nyíl" height="70" class="arrow hidden">
         <article class="hidden bemutatkozas">
             <h2>A rókáról</h2>
             <p>Szőre csillogása <span class="aranysarga">aranysárgából</span> <span class="voros">vörösbe</span>
@@ -65,21 +65,21 @@
         <div class="hidden card-container">
             <div class="hidden card">
                 <a href="assets/images/lnx.jpeg" data-lightbox="image-gallery">
-                    <img src="assets/images/lnx.jpeg" alt="Logaritmikus kifejezés." width="270px">
+                    <img src="assets/images/lnx.jpeg" alt="Logaritmikus kifejezés." width="270">
                 </a>
             </div>
         </div>
         <div class="hidden card-container">
             <div class="hidden card">
                 <a href="assets/images/lnx2.jpeg" data-lightbox="image-gallery">
-                    <img src="assets/images/lnx2.jpeg" alt="Logaritmikus kifejezés 2." width="270px">
+                    <img src="assets/images/lnx2.jpeg" alt="Logaritmikus kifejezés 2." width="270">
                 </a>
             </div>
         </div>
         <div class="hidden card-container">
             <div class="hidden card">
                 <a href="assets/images/lnx3.jpeg" data-lightbox="image-gallery">
-                    <img src="assets/images/lnx3.jpeg" alt="Logaritmikus kifejezés 3." width="270px">
+                    <img src="assets/images/lnx3.jpeg" alt="Logaritmikus kifejezés 3." width="270">
                 </a>
             </div>
             <a href="assets/images/fh1.jpg" data-lightbox="image-gallery" style="display: none;">
@@ -92,7 +92,6 @@
                 <img src="assets/images/fh3.jpg" alt="Hidden Image 3">
             </a>
         </div>
-
         <article class="hidden" id="utolso">Kicsi rókánk már babakora óta nagyon szerette a matematikát - amióta először
             megevett
             egy MatematiKacsát. 🦆 Kedvencei pedig hamar a reciprokkal való számolások lettek - kívűlről fújja az összes
@@ -147,6 +146,10 @@
                     hatványon.</p>
             </div>
         </div>
+        <form>
+            <h2>Segíts te is a rókának!</h2>
+            <h3>RecipRóka elfelejtette, hogyan viselkednek a rókák, és nem tudja, hogy nevelje a kisrókáit. Segíts neki te! </h3>
+        </form>
     </div>
     <footer>
         <div class="footer">
