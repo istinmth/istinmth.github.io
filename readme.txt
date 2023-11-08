@@ -7,3 +7,5 @@ A weblap RecipRóka és legjobb barátai elsődleges lakhelye, akik mindannyian 
 A használt Google Webfont a Libre Franklin.
 
 A különböző elemek görgetés során beúszása a Hyperplexed YouTube csatorna által lett inspirálva.
+
+A hamburger menü gombjának animációja a stacksorted.com-nak köszönhető.
