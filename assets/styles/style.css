@@ -8,8 +8,6 @@
     --auburn: #a22522;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
@@ -37,6 +35,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .mobile-break {
@@ -45,7 +49,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body::before {
@@ -176,31 +180,34 @@ body::before {
 }
 
 .page-title {
-    font-style: italic;
     opacity: 0;
     font-size: 13vw;
     position: absolute;
     bottom: 3rem;
+    /* keeps text at the bottom, regardless of other elements */
     left: 0;
     margin: 0;
     animation: fade-in 0.01s ease-in-out forwards;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.page-title:hover{
-    transform: scale(1.01);
+.page-title:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     transition: ease-in-out 0.5s;
 }
+
 .title-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .title-image:hover {
     transform: scale(1.01);
     transition: ease-in-out 0.5s;
 
 }
+
 .title-image img {
     opacity: 0.95;
     z-index: -1;
@@ -615,7 +622,7 @@ body::before {
     .navbar li a {
         text-decoration: none;
         color: #f7fff7ff;
-        font-size: 70%;
+        font-size: 80%;
         font-weight: 400;
         transition: all 0.1s ease-in-out;
         padding: 0rem;
