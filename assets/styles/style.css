@@ -8,6 +8,8 @@
     --auburn: #a22522;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
@@ -43,7 +45,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body::before {
@@ -174,22 +176,31 @@ body::before {
 }
 
 .page-title {
-    opacity: 0;
-    font-size: 20vh;
     font-style: italic;
+    opacity: 0;
+    font-size: 13vw;
     position: absolute;
     bottom: 3rem;
     left: 0;
     margin: 0;
-    animation: fade-in 0.1s ease-in-out forwards;
+    animation: fade-in 0.01s ease-in-out forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.page-title:hover{
+    transform: scale(1.01);
+    transition: ease-in-out 0.5s;
+}
 .title-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.title-image:hover {
+    transform: scale(1.01);
+    transition: ease-in-out 0.5s;
 
+}
 .title-image img {
     opacity: 0.95;
     z-index: -1;
@@ -337,6 +348,7 @@ body::before {
 }
 
 .aranysarga:hover {
+    cursor: default;
     background: linear-gradient(90deg, transparent, gold, transparent);
     background-size: 200% auto;
     color: var(--night);
@@ -354,6 +366,7 @@ body::before {
 }
 
 .voros:hover {
+    cursor: default;
     background: linear-gradient(90deg, transparent, var(--auburn), transparent);
     background-size: 200% auto;
     color: var(--night);
@@ -443,9 +456,9 @@ body::before {
     }
 
     .page-title {
-        font-size: 10vh;
-        margin-bottom: 5vh;
+        margin-bottom: 4vh;
         margin-left: 2vh;
+        font-size: 15vw;
     }
 
     .container article {
@@ -535,8 +548,7 @@ body::before {
     }
 
     .page-title {
-        font-size: 10.7vh;
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
         max-width: 100%;
     }
 
@@ -630,8 +642,7 @@ body::before {
     }
 
     .page-title {
-        font-size: 17vh;
-        margin-bottom: 1vh;
+        margin-bottom: 3vh;
         margin-left: 2vh;
     }
 
