@@ -484,7 +484,7 @@ body::before {
     /* tablet */
     .navbar {
         background-color: #0d0a0bff;
-        border-radius: 10px;
+        border-radius: 2px;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
     }
 
