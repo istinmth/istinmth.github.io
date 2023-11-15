@@ -6,9 +6,3 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 document.querySelectorAll('.hidden').forEach(ent => observer.observe(ent));
-
-var element = document.querySelector('.multiplikativ');
-element.addEventListener('animationend', function() {
-    this.classList.add('after-animation');
-    this.removeEventListener('animationend', arguments.callee);
-});
