@@ -32,13 +32,6 @@
     }
 }
 
-@font-face {
-    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2");
-    font-family: "Meta";
-    font-style: normal;
-    font-weight: normal;
-}
-
 /* GLOBAL STYLES */
 * {
     box-sizing: border-box;
@@ -62,7 +55,7 @@ html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 body::before {
@@ -188,8 +181,6 @@ body::before {
 .page-title-section {
     position: relative;
     height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .page-title {
@@ -200,10 +191,6 @@ body::before {
     margin: 0;
     font-family: "Meta", sans-serif;
     cursor: pointer;
-}
-
-.page-title:hover {
-    text-shadow: none;
 }
 
 .title-image {
