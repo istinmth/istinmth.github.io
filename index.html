@@ -22,6 +22,7 @@
     <script defer src="js/cinnamon.js"></script>
     <script defer src="js/range-input.js"></script>
     <script defer src="js/selectedcolor.js"></script>
+    <script defer src="js/pagetitle.js"></script>
 </head>
 
 <body>
@@ -44,8 +45,7 @@
     <div class="page-title-section">
         <div class="title-image"><img src="assets/images/fox.png" alt="RecipRóka, a róka képe."></div>
         <div>
-            <h1 class="page-title">Ő itt Recip<br class="mobile-break">Róka
-            </h1>
+            <h1 class="page-title">Ő itt Recip<br class="mobile-break">Róka</h1>
         </div>
     </div>
     <div class="container">
@@ -182,17 +182,18 @@
                     <input id="no-input" name="igen-nem" type="radio" value="nem">
                 </div>
                 <p>Milyen hosszúra kéne nőnie a rókacsemetéknek?</p>
-                <label for="range-input">Hossz (cm):</label>
+                <label for="range-input">Hossz (cm): <span id="range-value"></span></label>
                 <input id="range-input" name="hossz" type="range" min="0" max="100" oninput="updateValue(this.value)">
-                <span id="range-value"></span>
                 <p>Milyen színű a rókák bundája, ha egészségesek?</p>
                 <label for="color-input">Szín:</label>
-                <input id="color-input" name="szin" type="color">
-                <div id="selectedColor" style="height: 50px; width: 50px;"></div>
+                <div style="display: flex; align-items: center;">
+                    <input id="color-input" name="szin" type="color">
+                    <div id="selectedColor" style="height: 30px; width: 30px; border-radius: 7px; margin-left: 10px;">
+                    </div>
+                </div>
                 <input type="submit" value="Submit">
             </form>
         </div>
-
     </div>
     </div>
     <footer>

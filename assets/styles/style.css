@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* GENERAL COLOURS */
 :root {
@@ -30,13 +31,6 @@
     to {
         background-position: 200% center;
     }
-}
-
-@font-face {
-    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2");
-    font-family: "Meta";
-    font-style: normal;
-    font-weight: normal;
 }
 
 /* GLOBAL STYLES */
@@ -194,15 +188,9 @@ body::before {
 .page-title {
     font-size: 12vw;
     position: absolute;
-    bottom: 5rem;
-    /* keeps text at the bottom, regardless of other elements */
+    bottom: 5rem; /* keeps text at the bottom, regardless of other elements */
     margin: 0;
-    font-family: "Meta", sans-serif;
     cursor: pointer;
-}
-
-.page-title:hover {
-    text-shadow: none;
 }
 
 .title-image {
@@ -412,6 +400,7 @@ body::before {
 .checkbox-wrapper input {
     margin-left: 1vw;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -420,7 +409,8 @@ form {
 
 form h2,
 form h3,
-form p {
+form p,
+form span {
     color: var(--mint-cream);
     margin-top: 2vh;
 }
@@ -434,7 +424,6 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
-form input[type="color"],
 form input[type="range"] {
     width: 100%;
     padding: 2vh;
@@ -442,25 +431,37 @@ form input[type="range"] {
     border-radius: 10px;
 }
 
+form input[type="color"] {
+    width: 5%;
+    padding: 2vh;
+    border: 1px solid var(--mint-cream);
+    border-radius: 10px;
+}
+
 form input[type="submit"] {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #07bccc;
+    border-radius: 1px;
+    background-color: transparent;
+    font-family: 'Bebas Neue', cursive;
     color: var(--mint-cream);
+    font-size: 2em;
+    background-image: linear-gradient(white, white);
+    background-size: 100% 0.5vh;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+    border: none;
     cursor: pointer;
-    border-radius: 5px;
+    padding: 1px 1px;
+    margin-top: 10px;
 }
 
 form input[type="submit"]:hover {
-    background-color: #0597a6;
+    color: var(--night);
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
 }
-form input[type="color"] {
-    width: 60px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-}
+
 .footer {
     display: flex;
     flex-flow: row wrap;
