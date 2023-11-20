@@ -10,7 +10,6 @@
     --auburn: #a22522;
 }
 
-/* The rest of your CSS goes here */
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
@@ -31,6 +30,13 @@
     to {
         background-position: 200% center;
     }
+}
+
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* GLOBAL STYLES */
@@ -56,6 +62,7 @@ html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
 }
 
 body::before {
@@ -186,20 +193,17 @@ body::before {
 }
 
 .page-title {
-    opacity: 0;
-    font-size: 13vw;
+    font-size: 12vw;
     position: absolute;
-    bottom: 3rem;
+    bottom: 5rem;
     /* keeps text at the bottom, regardless of other elements */
-    left: 0;
     margin: 0;
-    animation: fade-in 0.01s ease-in-out forwards;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: "Meta", sans-serif;
+    cursor: pointer;
 }
 
 .page-title:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    transition: ease-in-out 0.5s;
+    text-shadow: none;
 }
 
 .title-image {
