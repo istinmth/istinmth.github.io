@@ -395,6 +395,72 @@ body::before {
     -webkit-text-stroke-width: 0.01px;
 }
 
+.form-wrapper {
+    max-width: 100%;
+    padding: 2vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--night);
+    border-radius: 10px;
+    margin: 2vw;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-wrapper input {
+    margin-left: 1vw;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form h2,
+form h3,
+form p {
+    color: var(--mint-cream);
+    margin-top: 2vh;
+}
+
+form label {
+    margin-top: 0.5vh;
+    margin-bottom: 5px;
+    color: var(--mint-cream);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="color"],
+form input[type="range"] {
+    width: 100%;
+    padding: 2vh;
+    border: 1px solid var(--mint-cream);
+    border-radius: 10px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #07bccc;
+    color: var(--mint-cream);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0597a6;
+}
+form input[type="color"] {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
 .footer {
     display: flex;
     flex-flow: row wrap;
@@ -495,16 +561,20 @@ body::before {
         margin: 3vh;
     }
 
-    .footer {
-        justify-content: center;
-    }
-
     .bemutatkozas p {
         font-size: 3vh;
     }
 
     .bemutatkozas h2 {
         font-size: 3.8vh;
+    }
+
+    .form-wrapper {
+        padding: 10px;
+    }
+
+    .footer {
+        justify-content: center;
     }
 }
 
