@@ -116,78 +116,69 @@
                     egyedik
                     hatványon.</p>
             </div>
-            <div class="hidden tetel">
-                <div class="hidden tetel-container">
-                    <p>A nullának semmilyen számkörben sem értelmezhető véges reciproka, ugyanis bármely számot nullával
-                        szorozva az eredmény nulla lesz.</p>
-                </div>
-            </div>
-            <div class="hidden tetel">
-                <div class="hidden tetel-container">
-                    <p>A reciprok tizedes tört alakja kiszámítható osztással. Sok osztási algoritmus azonban a reciprok
-                        kiszámításával kezdődik; azaz először kiszámolja a reciprokot, aztán szoroz az osztandóval.</p>
-                </div>
-            </div>
-            <div class="hidden tetel">
-                <div class="hidden tetel-container">
-                    <p>Az egész számok közötti szorzást tekintve csak az 1-nek és a -1-nek van inverze (önmaguk),
-                        ugyanis az
-                        1-en és -1-en kívül egyetlen egészhez sincsen olyan másik egész, hogy szorzatuk az 1-et adná.
-                    </p>
-                </div>
-            </div>
-            <div class="hidden tetel">
-                <div class=" hidden tetel-container">
-                    <p>Egy olyan algebrai struktúrában, ahol a szorzás asszociatív, az invertálható elemek nem lehetnek
-                        nullosztók.</p>
-                </div>
-            </div>
-            <div class="form-wrapper">
-                <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php">
-                    <h2>Segíts te is a Rókának</h2>
-                    <h3>A Róka elfelejtette, hogy hogyan is viselkednek az igazi rókák, és nem tudja, hogyan nevelje a kisrókáit. Segíts neki!</h3>
-                    <p>Add meg itt a neved, hogy tudja a róka, ki segített neki!</p>
-                    <label for="name-input">Ide írd:</label>
-                    <input id="name-input" name="name" type="text">
-                    <p>Itt megadhatod az e-mail címedet, hogy kapcsolatba lehessen lépni veled, ha még segítség kéne.</p>
-                    <label for="email-input">Email:</label>
-                    <input id="email-input" name="email" type="email">
-                    <p>Milyen vastagra növesszék a bundájukat a kis rókák?</p>
-                    <label for="bunda-input">Bunda (cm):</label>
-                    <input id="bunda-input" name="bunda" type="number">
-                    <p>Mit adjon a Róka reggelire a gyerekeknek?</p>
-                    <label for="option1">Nyúlhúst:</label>
-                    <input id="option1" name="nyuszi" type="checkbox" value="on">
-                    <label for="option2">Epret:</label>
-                    <input id="option2" name="eper" type="checkbox" value="on">
-                    <label for="option3">Nutellát:</label>
-                    <input id="option3" name="nutella" type="checkbox" value="on">
-                    <label for="option4">Kukacot:</label>
-                    <input id="option4" name="kukac" type="checkbox" value="on">
-                    <p>A gyerekek azt kérdezik, hogy a "gerinchúrosok" törzsébe tartoznak-e. Igaz ez?</p>
-                    <label for="yes-input">Igen:</label>
-                    <input id="yes-input" name="igen-nem" type="radio" value="igen">
-                    <label for="no-input">Nem:</label>
-                    <input id="no-input" name="igen-nem" type="radio" value="nem">
-                    <p>Milyen hosszúra kéne nőnie a rókacsemetéknek?</p>
-                    <label for="range-input">Hossz (cm):</label>
-                    <input id="range-input" name="hossz" type="range" min="0" max="100" oninput="updateValue(this.value)">
-                    <span id="range-value"></span>
-                    <p>Milyen színű a rókák bundája, ha egészségesek?</p>
-                    <label for="color-input">Szín:</label>
-                    <input id="color-input" name="szin" type="color">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+        </div>
+        <div class="hidden tetel">
+            <div class="hidden tetel-container">
+                <p>A nullának semmilyen számkörben sem értelmezhető véges reciproka, ugyanis bármely számot nullával
+                    szorozva az eredmény nulla lesz.</p>
             </div>
         </div>
-        <footer>
-            <div class="footer">
-                <p>©2023 Németh István Ákos</p>
-                <p>Az oldalon töltött idő alatt akár <span id="cinnamonRollCount">0</span> fahéjas tekercset is megehettél
-                    volna...
-                </p>
+        <div class="hidden tetel">
+            <div class="hidden tetel-container">
+                <p>A reciprok tizedes tört alakja kiszámítható osztással. Sok osztási algoritmus azonban a reciprok
+                    kiszámításával kezdődik; azaz először kiszámolja a reciprokot, aztán szoroz az osztandóval.</p>
             </div>
-        </footer>
-    </body>
-    </html>
+        </div>
+        <div class="hidden tetel">
+            <div class="hidden tetel-container">
+                <p>Az egész számok közötti szorzást tekintve csak az 1-nek és a -1-nek van inverze (önmaguk), ugyanis az
+                    1-en és -1-en kívül egyetlen egészhez sincsen olyan másik egész, hogy szorzatuk az 1-et adná.</p>
+            </div>
+        </div>
+        <div class="hidden tetel">
+            <div class=" hidden tetel-container">
+                <p>Egy olyan algebrai struktúrában, ahol a szorzás asszociatív, az invertálható elemek nem lehetnek
+                    nullosztók.</p>
+            </div>
+        </div>
+        <div>
+            <form>
+                <h2>Segíts te is a Rókának</h2>
+                <h3>A Róka elfelejtette, hogy </h3>
+                <label for="text-input">Text:</label>
+                <input id="text-input" type="text">
+
+                <label for="password-input">Password:</label>
+                <input id="password-input" type="password">
+
+                <label for="email-input">Email:</label>
+                <input id="email-input" type="email">
+
+                <label for="date-input">Date:</label>
+                <input id="date-input" type="date">
+
+                <label for="number-input">Number:</label>
+                <input id="number-input" type="number">
+
+                <label for="checkbox-input">Checkbox:</label>
+                <input id="checkbox-input" type="checkbox">
+
+                <label for="radio-input">Radio:</label>
+                <input id="radio-input" type="radio">
+
+                <label for="range-input">Range:</label>
+                <input id="range-input" type="range" min="0" max="100">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>©2023 Németh István Ákos</p>
+            <p>Az oldalon töltött idő alatt akár <span id="cinnamonRollCount">0</span> fahéjas tekercset is megehettél
+                volna...</p>
+        </div>
+    </footer>
+</body>
+</html>
