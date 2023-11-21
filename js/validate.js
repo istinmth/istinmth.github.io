@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#foxForm").validate({
         rules: {
-            name: {
+            nev: {
                 required: true,
                 minlength: 2,
                 maxlength: 20
@@ -40,7 +40,7 @@ $(document).ready(function () {
         },
         // error messages
         messages: {
-            name: {
+            nev: {
                 required: "Kérlek, add meg a neved",
                 minlength: "A neved legalább 2 karakter hosszú legyen",
                 maxlength: "A neved legfeljebb 20 karakter hosszú legyen"

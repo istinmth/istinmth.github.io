@@ -4,7 +4,7 @@ $("#foxForm").on('submit', function(fox) {
         return false;
     } else {
         // Form is valid, get the input values
-        var name = btoa($("#name-input").val());
+        var nev = btoa($("#name-input").val());
         var email = btoa($("#email-input").val());
         var bunda = btoa($("#bunda-input").val());
         var nyuszi = btoa($("#nyuszi").is(":checked").toString());
@@ -16,7 +16,7 @@ $("#foxForm").on('submit', function(fox) {
         var szin = btoa($("#color-input").val());
 
         // Redirect the user and pass the form values as URL parameters
-        window.location.href = "alma.html?name=" + name +
+        window.location.href = "alma.html?nev=" + nev +
             "&email=" + email +
             "&bunda=" + bunda +
             "&nyuszi=" + nyuszi +
