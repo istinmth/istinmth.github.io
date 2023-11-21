@@ -43,13 +43,11 @@ window.onload = function () {
     document.querySelector('.rokameret').textContent = size;
     // Set the text content of the element with the 'gerinchuros' class based on the 'gerinchuros' variable
     document.querySelector('.gerinchuros').textContent = gerinchuros === 'igen' ? 'gerinchúrosok törzse' : 'puhatestűek törzse';
+    document.querySelector('.username').textContent = nameCapitalized;
 
     ['nyuszi', 'eper', 'kukac', 'nutella'].forEach(element => {
         document.querySelector('.' + element).style.display = getParam(element) === 'true' ? 'block' : 'none';
     });
-
-    document.querySelector('.username').textContent = nameCapitalized;
-
 };
 
 function downloadSnapshot() {
