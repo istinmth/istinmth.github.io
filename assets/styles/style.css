@@ -522,6 +522,7 @@ form input[type="submit"]:hover {
     bottom: 0;
     height: 100%;
 }
+
 .download-button:hover {
     cursor: pointer;
 }

@@ -27,8 +27,11 @@ function loadFormDataFromURL() {
 
         return '#' + r + g + b;
     }
+    function capitalizeName(name) {
+        return name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    }
 
-    document.getElementById('username').textContent = data['nev'];
+    document.getElementById('username').textContent = capitalizeName(data['nev']);
     document.getElementById('rokameret').textContent = data['hossz'];
 
     document.querySelectorAll('.dark').forEach(path => {
@@ -53,5 +56,16 @@ function loadFormDataFromURL() {
         document.getElementById('gerinchuros').textContent = 'puhatestűek';
     }
 }
-
+function downloadSnapshot() {
+    document.querySelector('.download-button').style.display = 'none';
+    html2canvas(document.querySelector(".form-submitted-container"), { useCORS: true }).then(canvas => {
+        var img = canvas.toDataURL("image/png");
+        document.querySelector('.download-button').style.display = 'block';
+        // Create a link element
+        var link = document.createElement('a');
+        link.href = img;
+        link.download = 'roka.png';  // Set the download attribute of the link
+        link.click();  // Click the link to download the image
+    });
+}
 window.onload = loadFormDataFromURL;
