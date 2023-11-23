@@ -16,7 +16,7 @@ $("#foxForm").on('submit', function(fox) {
         var szin = btoa($("#color-input").val());
 
         // Redirect the user and pass the form values as URL parameters
-        window.location.href = "alma.html?nev=" + nev +
+        window.location.href = "submitted.html?nev=" + nev +
             "&email=" + email +
             "&bunda=" + bunda +
             "&nyuszi=" + nyuszi +

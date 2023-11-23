@@ -145,7 +145,7 @@ body::before {
 .menu-button::before,
 .menu-button::after {
     display: block;
-    background-color: #f7fff7ff;
+    background-color: var(--mint-cream);
     position: absolute;
     height: 4px;
     width: 30px;
@@ -169,7 +169,7 @@ body::before {
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+    background: var(--night);
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {
@@ -385,12 +385,12 @@ body::before {
 }
 
 .form-wrapper {
-    max-width: 100%;
+    width: 100%;
     padding: 2vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: var(--night);
     border-radius: 10px;
-    margin: 2vw;
+    margin: 5vw;
 }
 
 .checkbox-wrapper {
@@ -426,27 +426,26 @@ form input[type="text"],
 form input[type="email"],
 form input[type="number"],
 form input[type="range"] {
-    width: 100%;
-    padding: 2vh;
+    width: 75%;
+    padding: 1.2vh;
     border: 1px solid var(--mint-cream);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 form input[type="color"] {
-    width: 5%;
-    padding: 2vh;
-    border: 1px solid var(--mint-cream);
-    border-radius: 10px;
+    width: 2rem;
+    border: 0.01vw solid var(--mint-cream);
+    border-radius: 2px;
 }
 
 form input[type="submit"] {
-    border-radius: 1px;
+    border-radius: 1.5px;
     background-color: transparent;
     font-family: 'Bebas Neue', cursive;
     color: var(--mint-cream);
-    font-size: 2em;
-    background-image: linear-gradient(white, white);
-    background-size: 100% 0.5vh;
+    font-size: 1.7em;
+    background-image: linear-gradient(gold, gold);
+    background-size: 100% 0.2rem;
     background-repeat: no-repeat;
     background-position: 100% 0%;
     transition: background-size .7s, background-position .5s ease-in-out;
