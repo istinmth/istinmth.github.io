@@ -38,7 +38,7 @@ $(document).ready(function () {
                 required: true
             }
         },
-        // error messages
+        // hibaüzenetek
         messages: {
             nev: {
                 required: "Kérlek, add meg a neved",
