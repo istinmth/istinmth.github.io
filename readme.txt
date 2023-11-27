@@ -10,4 +10,4 @@ A különböző elemek görgetés során beúszása a Hyperplexed YouTube csator
 
 A hamburger menü gombjának animációja a stacksorted.com-nak köszönhető.
 
-A hosszabb javascript fájl, amire a pontokat szeretném, a getdata.js.
+A hosszabb javascript fájl, amire a pontokat szeretném, a getdata.js, ez pedig a form kitöltésével aktiválódik.
