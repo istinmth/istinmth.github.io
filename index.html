@@ -191,11 +191,9 @@
                 <input id="range-input" name="hossz" type="range" min="0" max="100" oninput="updateValue(this.value)">
             </div>
             <p>Milyen színű a rókák bundája, ha egészségesek?</p>
-            <label for="color-input">Szín:</label>
-            <div style="display: flex; align-items: center;">
+            <div class="checkbox-grid">
+                <label for="color-input">Szín:</label>
                 <input id="color-input" name="szin" type="color">
-                <div id="selectedColor" style="height: 30px; width: 30px; border-radius: 7px; margin-left: 10px;">
-                </div>
             </div>
             <input type="submit" value="Leadom">
         </form>

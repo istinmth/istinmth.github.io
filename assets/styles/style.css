@@ -492,7 +492,7 @@ form label {
 }
 
 form input[type="color"] {
-    width: 1.7rem;
+    width: 1.5rem;
     border: 0.01vw solid var(--mint-cream);
     border-radius: 2px;
 }
