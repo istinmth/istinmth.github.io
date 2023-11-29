@@ -20,6 +20,6 @@ $("#foxForm").on('submit', function(fox) {
         // Redirect the user and pass the form values as URL parameters
         const query = Object.entries(data)
             .map(([key, value]) => `${key}=${value}`).join('&');
-        window.location.href = "sumbitted.html?" + query;
+        window.location.href = "submitted.html?" + query;
     }
 });
