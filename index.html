@@ -51,7 +51,11 @@
     <div class="page-title-section">
         <div class="title-image"><img src="assets/images/fox.png" alt="RecipRóka, a róka képe."></div>
         <div>
-            <h1 class="page-title">Ő itt Recip<br class="mobile-break">Róka</h1>
+            <h1 class="page-title">
+                <a href="https://www.yout-ube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    Ő itt <span class="underline fox">Recip<br class="mobile-break">Róka</span>
+                </a>
+            </h1>
         </div>
     </div>
     <div class="container"><img src="assets/images/arrow.svg" alt="Lefele mutató nyíl" height="70" class="arrow hidden">
@@ -143,57 +147,58 @@
                     invertálható elemek nem lehetnek nullosztók.</p>
             </div>
         </div>
-        <div class=" hidden form-wrapper">
-            <form id="foxForm">
-                <h2>Segíts te is a Rókának</h2>
-                <h3>A Róka elfelejtette, hogy hogyan is viselkednek az igazi rókák, és nem tudja, hogyan nevelje a
-                    kisrókáit. Segíts neki!</h3>
+        <form id="foxForm">
+            <h2>Segíts te is a Rókának</h2>
+            <h3>A Róka elfelejtette, hogy hogyan is viselkednek az igazi rókák, és nem tudja, hogyan nevelje a
+                kisrókáit. Segíts neki!</h3>
+            <div class="form-element">
                 <p>Add meg itt a neved, hogy tudja a róka, ki segített neki!</p>
                 <label for="name-input">Ide írd:</label>
                 <input id="name-input" name="nev" type="text">
-                <p>Itt megadhatod az e-mail címedet, hogy kapcsolatba lehessen lépni veled, ha még segítség kéne.</p>
+            </div>
+            <div class="form-element">
+                <p>Itt megadhatod az e-mail címedet, hogy kapcsolatba lehessen lépni veled, ha még segítség kéne.
+                </p>
                 <label for="email-input">Email:</label>
                 <input id="email-input" name="email" type="email">
+            </div>
+            <div class="form-element">
                 <p>Milyen vastagra növesszék a bundájukat a kis rókák?</p>
                 <label for="bunda-input">Bunda (cm):</label>
                 <input id="bunda-input" name="bunda" type="number">
-                <p>Mit adjon a Róka reggelire a gyerekeknek?</p>
-                <div class="checkbox-wrapper">
-                    <label for="nyuszi">Nyúlhúst:</label>
-                    <input id="nyuszi" name="nyuszi" type="checkbox" value="on">
-                </div>
-                <div class="checkbox-wrapper">
-                    <label for="eper">Epret:</label>
-                    <input id="eper" name="eper" type="checkbox" value="on">
-                </div>
-                <div class="checkbox-wrapper">
-                    <label for="nutella">Nutellát:</label>
-                    <input id="nutella" name="nutella" type="checkbox" value="on">
-                </div>
-                <div class="checkbox-wrapper">
-                    <label for="kukac">Kukacot:</label>
-                    <input id="kukac" name="kukac" type="checkbox" value="on">
-                </div>
-                <p>A gyerekek azt kérdezik, hogy a "gerinchúrosok" törzsébe tartoznak-e. Igaz ez?</p>
-                <div class="checkbox-wrapper"><label for="yes-input">Igen:</label>
-                    <input id="yes-input" name="igen-nem" type="radio" value="igen">
-                </div>
-                <div class="checkbox-wrapper"><label for="no-input">Nem:</label>
-                    <input id="no-input" name="igen-nem" type="radio" value="nem">
-                </div>
+            </div>
+            <p>Mit adjon a Róka reggelire a gyerekeknek?</p>
+            <div class="checkbox-grid">
+                <label for="nyuszi">Nyúlhúst:</label>
+                <input id="nyuszi" name="nyuszi" type="checkbox" value="on">
+                <label for="eper">Epret:</label>
+                <input id="eper" name="eper" type="checkbox" value="on">
+                <label for="nutella">Nutellát:</label>
+                <input id="nutella" name="nutella" type="checkbox" value="on">
+                <label for="kukac">Kukacot:</label>
+                <input id="kukac" name="kukac" type="checkbox" value="on">
+            </div>
+            <p>A gyerekek azt kérdezik, hogy a "gerinchúrosok" törzsébe tartoznak-e. Igaz ez?</p>
+            <div class="checkbox-grid">
+                <label for="yes-input">Igen:</label>
+                <input id="yes-input" name="igen-nem" type="radio" value="igen">
+                <label for="no-input">Nem:</label>
+                <input id="no-input" name="igen-nem" type="radio" value="nem">
+            </div>
+            <div class="form-element">
                 <p>Milyen hosszúra kéne nőnie a rókacsemetéknek?</p>
                 <label for="range-input">Hossz (cm): <span id="range-value"></span></label>
                 <input id="range-input" name="hossz" type="range" min="0" max="100" oninput="updateValue(this.value)">
-                <p>Milyen színű a rókák bundája, ha egészségesek?</p>
-                <label for="color-input">Szín:</label>
-                <div style="display: flex; align-items: center;">
-                    <input id="color-input" name="szin" type="color">
-                    <div id="selectedColor" style="height: 30px; width: 30px; border-radius: 7px; margin-left: 10px;">
-                    </div>
+            </div>
+            <p>Milyen színű a rókák bundája, ha egészségesek?</p>
+            <label for="color-input">Szín:</label>
+            <div style="display: flex; align-items: center;">
+                <input id="color-input" name="szin" type="color">
+                <div id="selectedColor" style="height: 30px; width: 30px; border-radius: 7px; margin-left: 10px;">
                 </div>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+            </div>
+            <input type="submit" value="Leadom">
+        </form>
     </div>
     <footer>
         <div class="footer">

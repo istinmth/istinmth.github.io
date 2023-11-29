@@ -1,5 +1,12 @@
+$.extend($.validator.messages, {
+    require_from_group: "Kérlek válassz legalább egy ételt!"
+});
 $(document).ready(function () {
     $("#foxForm").validate({
+        errorClass: "errorMessage",
+        errorPlacement: function (error, element) {
+            error.insertAfter(element.parent());
+        },
         rules: {
             nev: {
                 required: true,
@@ -16,16 +23,16 @@ $(document).ready(function () {
                 max: 20
             },
             nyuszi: {
-                require_from_group: [1, ".checkbox-wrapper input"]
+                require_from_group: [1, ".checkbox-grid input"]
             },
             eper: {
-                require_from_group: [1, ".checkbox-wrapper input"]
+                require_from_group: [1, ".checkbox-grid input"]
             },
             nutella: {
-                require_from_group: [1, ".checkbox-wrapper input"]
+                require_from_group: [1, ".checkbox-grid input"]
             },
             kukac: {
-                require_from_group: [1, ".checkbox-wrapper input"]
+                require_from_group: [1, ".checkbox-grid input"]
             },
             "igen-nem": {
                 required: true
@@ -38,43 +45,34 @@ $(document).ready(function () {
                 required: true
             }
         },
+        groups: {
+            checkboxes: "nyuszi eper nutella kukac"
+        },
         // hibaüzenetek
         messages: {
             nev: {
-                required: "Kérlek, add meg a neved",
-                minlength: "A neved legalább 2 karakter hosszú legyen",
-                maxlength: "A neved legfeljebb 20 karakter hosszú legyen"
+                required: "Kérlek add meg a neved!",
+                minlength: "A neved legalább 2 karakter hosszú legyen!",
+                maxlength: "A neved legfeljebb 20 karakter hosszú legyen!"
             },
             email: {
-                required: "Kérlek, add meg az e-mail címed",
-                email: "Kérlek, adj meg egy érvényes e-mail címet"
+                required: "Kérlek add meg az e-mail címed!",
+                email: "Kérlek adj meg egy érvényes e-mail címet!"
             },
             bunda: {
-                required: "Kérlek, add meg, milyen vastagra növesszék a bundájukat a kis rókák",
-                min: "A bunda legalább 1 cm vastag legyen",
-                max: "A bunda legfeljebb 20 cm vastag lehet"
-            },
-            nyuszi: {
-                require_from_group: "Kérlek, válassz legalább egy ételt"
-            },
-            eper: {
-                require_from_group: "Kérlek, válassz legalább egy ételt"
-            },
-            nutella: {
-                require_from_group: "Kérlek, válassz legalább egy ételt"
-            },
-            kukac: {
-                require_from_group: "Kérlek, válassz legalább egy ételt"
+                required: "Kérlek add meg, milyen vastagra növesszék a bundájukat a kis rókák!",
+                min: "A bunda legalább 2 cm vastag legyen!",
+                max: "A bunda legfeljebb 20 cm vastag lehet!"
             },
             "igen-nem": {
-                required: "Kérlek, válaszolj erre a kérdésre"
+                required: "Kérlek válaszolj erre a kérdésre!"
             },
             hossz: {
-                required: "Kérlek, add meg, milyen hosszúra kéne nőnie a rókacsemetéknek",
-                range: "A hossz 0 és 100 cm között legyen"
+                required: "Kérlek add meg, milyen hosszúra kéne nőnie a rókacsemetéknek!",
+                range: "A hossz 0 és 100 cm között legyen!"
             },
             szin: {
-                required: "Kérlek, add meg, milyen színű a rókák bundája szerinted! "
+                required: "Kérlek add meg, milyen színű a rókák bundája szerinted!"
             }
         }
     });
