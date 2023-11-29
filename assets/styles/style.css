@@ -226,13 +226,12 @@ body::before {
 .page-title {
     font-size: 12vw;
     position: absolute;
-    bottom: 5rem;
-    /* a szöveg a viewport alján jelenik meg */
+    bottom: 5rem; /* a szöveg a viewport alján jelenik meg */
     margin: 0;
     cursor: pointer;
     color: var(--night);
+    height: calc(var(--vh, 1vh) * 100);
 }
-
 .page-title a,
 .page-title a:visited,
 .page-title a:hover {
