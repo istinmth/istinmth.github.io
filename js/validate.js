@@ -23,16 +23,16 @@ $(document).ready(function () {
                 max: 20
             },
             nyuszi: {
-                require_from_group: [1, ".checkbox-grid input"]
+                require_from_group: [1, ".checkbox-grid input[type='checkbox']"]
             },
             eper: {
-                require_from_group: [1, ".checkbox-grid input"]
+                require_from_group: [1, ".checkbox-grid input[type='checkbox']"]
             },
             nutella: {
-                require_from_group: [1, ".checkbox-grid input"]
+                require_from_group: [1, ".checkbox-grid input[type='checkbox']"]
             },
             kukac: {
-                require_from_group: [1, ".checkbox-grid input"]
+                require_from_group: [1, ".checkbox-grid input[type='checkbox']"]
             },
             "igen-nem": {
                 required: true

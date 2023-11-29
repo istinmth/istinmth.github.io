@@ -449,7 +449,12 @@ body::before {
     gap: 1vh;
     align-items: center;
 }
-
+.radio-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1vh;
+    align-items: center;
+}
 form {
     display: flex;
     flex-direction: column;
