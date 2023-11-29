@@ -1,9 +1,9 @@
-$("#foxForm").on('submit', function(fox) {
-    fox.preventDefault();
+$("#foxForm").on('submit', function (fox) {
+    fox.preventDefault(); /*Ez itt megelőzi, hogy a default dolog történjen, amikor submitolnánk.*/
     if (!$(this).valid()) {
         return false;
     } else {
-        // Form is valid, get the input values
+        // Helyes a form, elküldjük az adatokat
         const data = {
             nev: btoa($("#name-input").val()),
             email: btoa($("#email-input").val()),
@@ -17,9 +17,9 @@ $("#foxForm").on('submit', function(fox) {
             szin: btoa($("#color-input").val()),
         };
 
-        // Redirect the user and pass the form values as URL parameters
+        // Itt írjuk bele az adatokat az URL-be
         const query = Object.entries(data)
             .map(([key, value]) => `${key}=${value}`).join('&');
-        window.location.href = "sumbitted.html?" + query;
+        window.location.href = "submitted.html?" + query;
     }
 });

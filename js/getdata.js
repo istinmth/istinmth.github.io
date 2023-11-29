@@ -5,22 +5,22 @@ function loadFormDataFromURL() {
 
     keys.forEach(key => {
         let value = params.get(key);
-        // Decode the base64 encoded value
+        // Itt dekódoljuk a base64-es értékeket
         data[key] = atob(value);
     });
 
     function lightenColor(color, percent) {
-        // Convert the hex color to RGB
+        // a hex színek 6 karakterből állnak, ahol az első kettő a vörös, a második kettő a zöld, a harmadik kettő a kék
         var r = parseInt(color.substr(1, 2), 16);
         var g = parseInt(color.substr(3, 2), 16);
         var b = parseInt(color.substr(5, 2), 16);
 
-        // Increase each RGB value by 10% and clamp to 255
+        // Itt számoljuk ki a színt, amin a százalékos változtatást elvégezzük
         r = Math.min(255, Math.round(r * (1 + percent / 100)));
         g = Math.min(255, Math.round(g * (1 + percent / 100)));
         b = Math.min(255, Math.round(b * (1 + percent / 100)));
 
-        // Convert back to hex
+        // Visszakonvertálás hexadecimális színkóddá. Azért kell a padStart, hogy mindig 2 karakter legyen a színkód, mert a 0-15 közötti számok egyjegyű hexadecimális számot eredményeznek.
         r = r.toString(16).padStart(2, '0');
         g = g.toString(16).padStart(2, '0');
         b = b.toString(16).padStart(2, '0');
@@ -61,11 +61,10 @@ function downloadSnapshot() {
     html2canvas(document.querySelector(".form-submitted-container"), { useCORS: true }).then(canvas => {
         var img = canvas.toDataURL("image/png");
         document.querySelector('.download-button').style.display = 'block';
-        // Create a link element
         var link = document.createElement('a');
         link.href = img;
-        link.download = 'roka.png';  // Set the download attribute of the link
-        link.click();  // Click the link to download the image
+        link.download = 'roka.png';
+        link.click();
     });
 }
 window.onload = loadFormDataFromURL;

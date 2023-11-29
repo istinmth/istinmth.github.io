@@ -48,7 +48,6 @@ $(document).ready(function () {
         groups: {
             checkboxes: "nyuszi eper nutella kukac"
         },
-        // hibaüzenetek
         messages: {
             nev: {
                 required: "Kérlek add meg a neved!",
