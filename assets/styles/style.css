@@ -230,7 +230,6 @@ body::before {
     margin: 0;
     cursor: pointer;
     color: var(--night);
-    height: calc(var(--vh, 1vh) * 100);
 }
 .page-title a,
 .page-title a:visited,
