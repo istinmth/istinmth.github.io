@@ -82,7 +82,9 @@ body::before {
     filter: blur(5px);
     transform: translateX(-100%);
 }
-
+.card img {
+    width: 16.85em;
+} 
 .show {
     opacity: 1;
     filter: blur(0px);
@@ -129,6 +131,8 @@ body::before {
 
 .nav-logo img {
     margin-top: 0.3rem;
+    width: 2em;
+    height: 2em;
 }
 
 .logo-container:hover {
