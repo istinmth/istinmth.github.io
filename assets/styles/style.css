@@ -256,7 +256,7 @@ body::before {
 .title-image img {
     opacity: 0.95;
     z-index: -1;
-    filter: drop-shadow(5px 5px 5px #222)
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9))
 }
 
 .container {
@@ -269,6 +269,7 @@ body::before {
 .arrow {
     margin-bottom: 10vh;
     margin-right: auto;
+    height: 4.5rem;
 }
 
 .arrow:hover {
@@ -366,7 +367,7 @@ body::before {
     position: absolute;
     inset: 0;
     padding: 3vh;
-    background-color: var(--night);
+    background-color: var(--ebony);
     color: var(--mint-cream);
     border-radius: 12px;
     transition: 0.2s ease;
@@ -668,7 +669,7 @@ form input[type="submit"]:hover {
 
     .title-image img {
         width: 65%;
-        margin-top: 6vh;
+        margin-top: 3.5vh;
     }
 
     .tetel {
@@ -700,7 +701,7 @@ form input[type="submit"]:hover {
 
     /* tablet */
     .navbar {
-        background-color: #0d0a0bff;
+        background-color: var(--night);
         border-radius: 2px;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
     }
@@ -712,7 +713,7 @@ form input[type="submit"]:hover {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 50px;
+        margin-top: 3.125em;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -720,7 +721,7 @@ form input[type="submit"]:hover {
         align-items: center;
     }
 
-    /*A tilde a subsequent sibling selector.*/
+    /*A tilde a "subsequent sibling selector".*/
     #menu-toggle~.menu li {
         height: 0;
         margin: 0;
@@ -758,7 +759,8 @@ form input[type="submit"]:hover {
     }
 
     .title-image img {
-        width: 60vh;
+        width: 55vh;
+        margin-top: 3.5vh;
     }
 
     .container article {
@@ -843,7 +845,7 @@ form input[type="submit"]:hover {
 
     .title-image img {
         width: 47vh;
-        margin-top: 2vh;
+        margin-top: 3.5vh;
     }
 
     .page-title {
