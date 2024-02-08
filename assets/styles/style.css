@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* SZÍNEK */
+/* COLORS I'M USING ON THIS WEBSITE (easier to type out the name than the HEX) */
 :root {
     --night: #0d0a0bff;
     --mint-cream: #f7fff7ff;
@@ -16,13 +16,14 @@
     --seal-white: #E6E6F1;
 }
 
-/* HA VALAKI NEM SZERETNÉ AZ ANIMÁCIÓT, ÉS EZ BE VAN ÁLLÍTVA A BÖNGÉSZŐJÉBEN */
+/* THIS IS THE POLITE WAY TO USE AN ANIMATION: STOP THE ELEMENTS FROM FLOATING IN FROM THE LEFT*/
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
 }
 
+/* This animation will change the opacity of an element from 0 to 1, creating a fade-in effect. */
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -62,7 +63,7 @@ img {
     user-select: none;
 }
 
-/*Nem működik telefonon safarin ha nem így van.*/
+/* We need the body before tag to make the background work on all browsers (iOS 17.2 safari did not like background-size:cover at all at the time of development.)*/
 body::before {
     content: "";
     position: fixed;
@@ -78,8 +79,10 @@ body::before {
 
 .hidden {
     opacity: 0;
+    /* The transition property is set to all 1.1s, which means all properties of the element will transition over a period of 1.1 seconds. */
     transition: all 1.1s;
     filter: blur(5px);
+    /* This means the element will be moved 100% to the left of its current position. */
     transform: translateX(-100%);
 }
 
@@ -139,11 +142,13 @@ body::before {
 
 .logo-container:hover {
     transform: scale(1.08);
+    /*The custom cursor is a fox here*/
     cursor: url('../icons/fox-cursor.svg'), auto;
 }
 
 .nav-logo:hover {
     transform: scale(1.08);
+    /*The custom cursor is a fox here*/
     cursor: url('../icons/fox-cursor.svg'), auto;
 }
 
@@ -157,13 +162,12 @@ body::before {
     z-index: 1;
 }
 
-/*Azokat az li elementeket választja ki, ahol a parent menu element.*/
+/*Chooses the li elements where the parent has the .menu class*/
 .menu>li {
     margin: 0 1rem;
     overflow: hidden;
 }
 
-/*Számítógépnézetben nem kell látni*/
 .menu-button-container {
     display: none;
     height: 100%;
@@ -178,12 +182,13 @@ body::before {
     display: none;
 }
 
-/*Itt készül a 3 vonal, és a transition ami X-szé változtatja ha rányomunk.*/
+/* Define the styles for the hamburger menu button and its before and after pseudo-elements. */
 .menu-button,
 .menu-button::before,
 .menu-button::after {
     display: block;
     background-color: var(--mint-cream);
+    /* Position the elements absolutely relative to their nearest positioned ancestor. */
     position: absolute;
     height: 4px;
     width: 30px;
@@ -191,30 +196,34 @@ body::before {
     border-radius: 2px;
 }
 
-/*HAMBURGERMENÜ GOMB, így nyílik le*/
+/* The upper line of the menu button */
 .menu-button::before {
     content: '';
     margin-top: -8px;
 }
 
+/* The bottom line of the menu button */
 .menu-button::after {
     content: '';
     margin-top: 8px;
 }
 
-/*A HAMBURGERMENÜ SELECT ANIMÁCIÓJA*/
-/* A + az "adjacent sibling combinator" ami azt jelenti, hogy a közvetlenül a jobb oldalon lévő elemet választja ki, ami a bal oldalon lévő elem testvére. */
+/* We create half the X */
 #menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
 }
 
+/*The middle line is hidden, no need for it in the X */
 #menu-toggle:checked+.menu-button-container .menu-button {
     background: var(--night);
 }
 
+/* And the other half of the X. */
 #menu-toggle:checked+.menu-button-container .menu-button::after {
+    /* Move the element to its original position. */
     margin-top: 0px;
+    /* Rotate the element 405 degrees counterclockwise. */
     transform: rotate(-405deg);
 }
 
@@ -230,7 +239,6 @@ body::before {
     font-size: 12vw;
     position: absolute;
     bottom: 5rem;
-    /* a szöveg a viewport alján jelenik meg */
     margin: 0;
     cursor: pointer;
     color: var(--night);
@@ -443,11 +451,13 @@ body::before {
     border-radius: 10px;
     margin: 4.5vw;
 }
+
 #foxForm:hover {
     transform: scale(1.002);
     transition: ease-in-out 0.5s;
 }
-/*Itt a grid sokkal célravezetőbb volt*/
+
+/*Using a grid here makes it really easy to align the checkboxes neatly. */
 .checkbox-grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -477,7 +487,6 @@ form span {
     margin-bottom: 1vh;
 }
 
-/*Végül itt a div lesz 75% és benne minden 100%, így működik rendesen a flex*/
 .form-element {
     width: 75%;
 }
@@ -733,7 +742,7 @@ form input[type="submit"]:hover {
         align-items: center;
     }
 
-    /*A tilde a "subsequent sibling selector".*/
+    /*A tilde is a "subsequent sibling selector" */
     #menu-toggle~.menu li {
         height: 0;
         margin: 0;

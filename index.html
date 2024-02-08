@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the color of the tile for Microsoft's pinned site feature -->
     <meta name="msapplication-TileColor" content="#da532c">
+    <!-- Link to an XML file that specifies the images to use for Microsoft's pinned site feature -->
     <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+    <!-- Set the default theme color for browsers, such as the one you turn on when turning on 'Allow website tinting' -->
     <meta name="theme-color" content="#ffffff">
     <meta name="author" content="Németh István Ákos">
+    <!-- Provide a description for search engines -->
     <meta name="description" content="Főoldal, RecipRóka oldala.">
     <title>Főoldal</title>
 
     <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Link to the CSS file for the Lightbox2 library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
+    <!-- Link to the icon files for different platforms and devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -21,6 +27,7 @@
     <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
 
+    <!-- Link to the JavaScript files, using the defer attribute to avoid blocking the rendering of the page -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
@@ -190,6 +197,7 @@
             </div>
             <div class="form-element">
                 <p>Milyen hosszúra kéne nőnie a rókacsemetéknek?</p>
+                <!-- Range input allowing the user to select a value between 0 and 100. The oninput attribute is used to call the 'updateValue' function every time the user changes the value of the input, that displays the current value. -->
                 <label for="range-input">Hossz (cm): <span id="range-value"></span></label>
                 <input id="range-input" name="hossz" type="range" min="0" max="100" oninput="updateValue(this.value)">
             </div>
